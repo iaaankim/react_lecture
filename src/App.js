@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import Subject from './components/Subject';
 import TOC from './components/Toc';
 import Content from './components/Content';
+=======
+import Subject from './Subject';
+import TOC from './Toc';
+import Content from './Content';
+>>>>>>> ea439643194ab36c28428a699f7d47a146a5911f
 
 class App extends Component {
 	constructor(props) {
@@ -38,6 +44,7 @@ class App extends Component {
 		}
 		return (
 			<div className="App">
+<<<<<<< HEAD
 				<Subject 
 					title={this.state.subject.title} 
 					sub={this.state.subject.sub}
@@ -59,6 +66,11 @@ class App extends Component {
 					>
 				</TOC>
 				<Content title={_title} desc={_desc}></Content>
+=======
+				<Subject title='WEB' sub='World Wide Web!!'></Subject>
+				<TOC></TOC>
+				<Content title="HTML" desc='HTML is HyperText Markup Language.'></Content>
+>>>>>>> ea439643194ab36c28428a699f7d47a146a5911f
 			</div>
 		);
 	}
