@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 
 class TOC extends Component {
+	shouldComponentUpdate(newProps, newState) {
+		if(newProps.data === this.props.data) {
+			return false;
+		} else {
+			return true;
+		}
+	};
+
 	render() {
 		console.log('TOC render');
 		let lists = [];
@@ -22,7 +30,7 @@ class TOC extends Component {
 			i++;
 		}
 		return(
-			<nav>
+			<nav> 
 				<ul>
 					{lists}
 				</ul>
